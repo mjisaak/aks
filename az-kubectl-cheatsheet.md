@@ -1,5 +1,15 @@
 ### Az and kubectl cheatsheet
 
+Az login to Azure
+```
+az login
+```
+
+If you have multiple subscription, you can set the desired one using:
+```
+az account set --subscription mbr_mvp
+```
+
 Install kubectl
 ```
 az aks install-cli 

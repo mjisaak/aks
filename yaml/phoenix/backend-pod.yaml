@@ -1,0 +1,15 @@
+apiVersion: "v1"
+kind: Pod
+metadata:
+  name: calcbackend
+  labels:
+    name: calcbackend
+    app: calculator
+spec:
+  containers:
+    - name: calcbackend
+      image: mbrandl.azurecr.io/calcbackend:latest
+      ports:
+        - containerPort: 80
+          name: http         
+          protocol: TCP
