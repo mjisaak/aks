@@ -20,4 +20,4 @@ spec:
           valueFrom:
             secretKeyRef:
               name: appinsightsecret
-              key: appinsightskey
+              key: appinsightkey
