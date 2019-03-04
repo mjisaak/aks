@@ -59,3 +59,9 @@ Get all certificates
 ```bash
 kubectl get certificates --all-namespaces
 ```
+
+Check certificate state:
+
+```bash
+kubectl describe certificate <mycert> --namespace <mynamespace>
+```
