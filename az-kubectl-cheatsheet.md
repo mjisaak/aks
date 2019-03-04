@@ -45,11 +45,17 @@ kubectl cluster-info
 Delete all pods
 
 ```bash
-kubectl delete --all pods 
+kubectl delete --all pods
 ```
 
 Edit the specification of a an entity e. g. service:
 
 ```bash
 kubectl edit svc <myservice>
+```
+
+Get all certificates
+
+```bash
+kubectl get certificates --all-namespaces
 ```
