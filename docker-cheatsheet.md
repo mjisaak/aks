@@ -39,5 +39,5 @@ docker run -d -p 8080:80 <mytag>
 Delete all images
 
 ```bash
-docker image rm $(docker images -a -q) --force
+docker rmi $(docker images -a -q) --force
 ```
