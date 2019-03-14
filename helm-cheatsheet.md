@@ -37,8 +37,13 @@ helm install --name <NAME> .\Helm\ --namespace=<MYNS>
 ```
 
 upgrade a helm chart
+
 ```bash
 helm upgrade <chartname> .\Helm\ --namespace <MYNS>
 ```
 
+delete a helm chart
+
+```bash
 helm delete --purge
+```

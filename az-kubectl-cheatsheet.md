@@ -65,3 +65,18 @@ Check certificate state:
 ```bash
 kubectl describe certificate <mycert> --namespace <mynamespace>
 ```
+
+Set the default namespace for all requests:
+
+```bash
+kubectl config set-context $(kubectl config current-context) --namespace=<mynamespace>
+```
+
+Get Enviornment variables for a pod
+
+```bash
+# connect tot he pod
+kubectl exec -it <mypodname> -- /bin/bash
+# print environment variablers
+printenv
+```
