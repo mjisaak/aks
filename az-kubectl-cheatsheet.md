@@ -48,6 +48,12 @@ Delete all pods
 kubectl delete --all pods
 ```
 
+Delete a pod by specifying a label
+
+```bash
+kubectl delete pod -l app-mssql
+```
+
 Edit the specification of a an entity e. g. service:
 
 ```bash
